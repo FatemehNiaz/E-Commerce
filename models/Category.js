@@ -10,14 +10,17 @@ Category.init(
     // * `id`
     id: {
       // * Integer.
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER, 
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
       
-      // * Doesn't allow null values.
-    
-      // * Set as primary key.
-    
-      // * Uses auto increment.
+    },
+    category_name: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
+    
   },
   {
     sequelize,
