@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag } = require('../../models');
+const { Tag, Product, ProductTag, Category } = require('../../models');
 
 // The `/api/tags` endpoint
 
@@ -55,13 +55,44 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-
-
+try{
+  const updateTag = await Tag.update({
+    Tag_name: req.body.tag_name
+  }, {
+    where: {
+        id:req.params.id
+    }
+  });
+  if (!updateTag[0]){
+    return res.status(400).json({
+      message: "Tag not found"
+    });
+  }
+  return res.status(200).json(updateTag);
+}
+  catch(err){
+    res.status(500).json(err);
+  }
 });
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
-  
+  try{
+    const destroyTag = await Tag.destroy({
+      where: {
+        id:req.params.id
+      }
+    });
+    if(!destroyTag){
+      return req.status(400).json({
+        messgae: "Tag not found"
+      });
+    }
+    return res.status(200).json(destroyTag);
+  }
+  catch(err){
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
