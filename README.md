@@ -38,9 +38,9 @@ There are two walk through videos here one for MySQL workbench and one for insom
 
 ![In Insomnia, the user tests “DELETE tags,” “DELETE Categories,” and “DELETE All Products.”.](./Assets/DELETE.gif)
 
-![Two links for the first video. E-commerce walk through video for MySQl workbench](https://youtu.be/Pkt5IT6hmwY) or (https://drive.google.com/file/d/1M2nJUOoExcWfIWBcCb5QawM8gR1X3jUg/view)the same video in google drive for additional guidance on creating a video.
+![Two links for the first video. E-commerce walk through video for MySQl workbench](https://youtu.be/Pkt5IT6hmwY) [same video in google drive](https://drive.google.com/file/d/1M2nJUOoExcWfIWBcCb5QawM8gR1X3jUg/view)the same video in google drive for additional guidance on creating a video.
 
-![Two links for the second video. E-commerce walk through video for Insomnia](https://youtu.be/lnutwrsDuAI) or (https://drive.google.com/file/d/164cZNglWTZQa2i4FTFB2HBBsoa0LNp_s/view)the same video in google drive for additional guidance on creating a video.
+![Two links for the second video. E-commerce walk through video for Insomnia in Youtube](https://youtu.be/lnutwrsDuAI)[video in google drive](https://drive.google.com/file/d/164cZNglWTZQa2i4FTFB2HBBsoa0LNp_s/view)the same video in google drive for additional guidance on creating a video.
 
  ## Techniques
 
